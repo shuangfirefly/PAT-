@@ -1,6 +1,5 @@
-/*** 原创 ***/
-
 #include <stdio.h>
+#include <stdlib.h>
 #include <math.h>
 
 int main(void)
@@ -13,14 +12,13 @@ int main(void)
     a += b;
     if(a)
     {
-        Flag = (a<0)?-10:10;
-        for(Cnt=0, i=0; a; )
+        Flag = (a<0)?-1:1;
+        for(Cnt=0, i=0; a; i++)
         {
-            Num[Cnt++] = abs(a%Flag) + '0'-0;
-            ///sprintf(Num+Cnt, "%d", abs(a%Flag)), Cnt++;
-            i++;
+            Num[Cnt++] = abs(a%10) + '0'-0;
+            ///sprintf(Num+Cnt, "%d", abs(a%10)), Cnt++;
             a /= 10;
-            if((0==i%3)&&i&&a)
+            if((0==(i+1)%3)&&i&&a)
                 Num[Cnt++] = ',';
         }
         if(Flag<0)
