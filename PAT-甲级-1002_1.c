@@ -3,7 +3,7 @@
 /*** 用时 1小时30分***/
 /*** 主要思路，使用单向链表进行处理***/
 /*** 我这种方法很复杂，准备采用 Zhaowang lynnprosper中提示的方法再做一次***/
-
+/*** 题目网址： https://www.patest.cn/contests/pat-a-practise/1002 ***/
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
