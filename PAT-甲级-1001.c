@@ -1,3 +1,5 @@
+/*** 原创***/
+/*** 题目网址：https://www.patest.cn/contests/pat-a-practise/1001 ***/
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
