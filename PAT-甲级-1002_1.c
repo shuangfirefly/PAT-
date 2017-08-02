@@ -53,7 +53,7 @@ int main(void)
         else if(Tmp->exp == B->exp)
         {
             Tmp->cft += B->cft;
-            if(abs(Tmp->cft)<1e-7)
+            if(fabs(Tmp->cft)<1e-7)
                 K[0] -= 2;
             else
                 K[0] -= 1;
@@ -75,7 +75,7 @@ int main(void)
 
     for(; NULL!=Tmp; )
     {
-        if(abs(Tmp->cft)>=1e-7)
+        if(fabs(Tmp->cft)>=1e-7)
             printf(" %d %.1f", Tmp->exp, Tmp->cft);
         TmpB = Tmp, Tmp=Tmp->Next;
         free(TmpB);
